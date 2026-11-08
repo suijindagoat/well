@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>USB Music Drop</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="mark">♪</div>
+      <div><p class="eyebrow">PRIVATE TRANSFER</p><h1>USB Music Drop</h1></div>
+      <span class="status live" id="connection">Ready</span>
+    </header>
+
+    <section class="intro">
+      <div><p class="eyebrow accent">SEND THE FULL COLLECTION</p><h2>Music in. USB out.<br><em>Nothing renamed.</em></h2></div>
+      <p class="lede">Drop songs, folders, mixtapes, or archives here. Each file streams live to the plugged-in USB—nothing is stored on Render.</p>
+    </section>
+
+    <section class="workspace" id="workspace">
+      <div class="drop card" id="dropZone" tabindex="0">
+        <input id="filePicker" type="file" multiple accept="audio/*,.zip,.rar,.7z" hidden>
+        <input id="folderPicker" type="file" webkitdirectory multiple hidden>
+        <div class="disc">↗</div>
+        <p class="step">01 / SELECT</p>
+        <h3>Drop music anywhere here</h3>
+        <p>Individual tracks, full albums, and mixtape folders are welcome.</p>
+        <div class="actions"><button id="chooseFiles">Choose files</button><button class="secondary" id="chooseFolder">Choose folder</button></div>
+      </div>
+      <aside class="card facts">
+        <p class="step">02 / THE HANDOFF</p>
+        <div><strong>1</strong><span>The local receiver waits for transfers from Render.</span></div>
+        <div><strong>2</strong><span>Each upload streams directly to the detected USB.</span></div>
+        <div><strong>3</strong><span>SHA-256 confirms every byte before success appears.</span></div>
+      </aside>
+      <section class="card queue">
+        <div class="queue-head"><div><p class="step">03 / QUEUE</p><h3>Transfers</h3></div><span id="summary">No files yet</span></div>
+        <div id="queueList" class="queue-list"><p class="empty">Your selected music will appear here.</p></div>
+      </section>
+    </section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
