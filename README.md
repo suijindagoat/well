@@ -36,7 +36,7 @@ To force a particular destination, edit `.receiver-config.json` and set `usbPath
 
 ## Sender workflow
 
-The sender opens the website, chooses files/folders, and leaves the page open. Files travel one at a time so large collections do not overload the connection. Supported formats: MP3, M4A, AAC, WAV, FLAC, OGG, OPUS, WMA, AIFF, ALAC, ZIP, RAR and 7Z.
+The sender opens the website, chooses files/folders, and leaves the page open. Fast mode streams up to four files in parallel and the application does not impose a file-count or per-file-size cap. Supported formats: MP3, M4A, AAC, WAV, FLAC, OGG, OPUS, WMA, AIFF, ALAC, ZIP, RAR and 7Z.
 
 ## Local verification
 
