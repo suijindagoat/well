@@ -1,4 +1,5 @@
 .data/
+node_modules/
 .receiver-config.json
 *.part
 *.log

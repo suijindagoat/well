@@ -2,6 +2,7 @@
   "serverUrl": "https://usb-music-drop.onrender.com",
   "usbPath": "",
   "destinationFolder": "Incoming Music",
+  "pairingCode": "123456",
   "retryMs": 1000,
   "parallelTransfers": 4
 }

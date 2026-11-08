@@ -11,12 +11,17 @@
     <header>
       <div class="mark">♪</div>
       <div><p class="eyebrow">PRIVATE TRANSFER</p><h1>USB Music Drop</h1></div>
-      <span class="status live" id="connection">Ready</span>
+      <span class="status" id="connection">Enter code</span>
     </header>
 
     <section class="intro">
       <div><p class="eyebrow accent">SEND THE FULL COLLECTION</p><h2>Music in. USB out.<br><em>Nothing renamed.</em></h2></div>
-      <p class="lede">Drop songs, folders, mixtapes, or archives here. Each file streams live to the plugged-in USB—nothing is stored on Render.</p>
+      <p class="lede">Drop songs, folders, mixtapes, or archives here. Direct P2P sends every file from this device to the plugged-in USB without passing the music through Render.</p>
+    </section>
+
+    <section class="card auth">
+      <div><p class="step">00 / DIRECT LINK</p><h3>Connect to the USB receiver</h3><p class="message" id="pairingMessage">Enter the six-digit code from the receiver.</p></div>
+      <form id="p2pForm"><input id="pairingCode" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code" placeholder="6-digit code" aria-label="Receiver pairing code" required><button type="submit">Connect P2P</button><button type="button" class="secondary" id="relayMode">Use relay fallback</button></form>
     </section>
 
     <section class="workspace" id="workspace">
@@ -31,9 +36,9 @@
       </div>
       <aside class="card facts">
         <p class="step">02 / THE HANDOFF</p>
-        <div><strong>1</strong><span>The local receiver waits for transfers from Render.</span></div>
-        <div><strong>2</strong><span>Each upload streams directly to the detected USB.</span></div>
-        <div><strong>3</strong><span>SHA-256 confirms every byte before success appears.</span></div>
+        <div><strong>1</strong><span>The pairing code creates an encrypted direct connection.</span></div>
+        <div><strong>2</strong><span>Four P2P lanes write files and subfolders straight to the USB.</span></div>
+        <div><strong>3</strong><span>Render only introduces the two devices and never receives P2P music bytes.</span></div>
       </aside>
       <section class="card queue">
         <div class="queue-head"><div><p class="step">03 / QUEUE</p><h3>Transfers</h3></div><span id="summary">No files yet</span></div>

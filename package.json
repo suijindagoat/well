@@ -11,5 +11,8 @@
     "receiver": "node receiver.js",
     "test": "node test.js",
     "check": "node --check server.js && node --check receiver.js && node --check public/app.js && node --check test.js"
+  },
+  "dependencies": {
+    "werift": "0.24.4"
   }
 }
