@@ -1,0 +1,6 @@
+{
+  "serverUrl": "https://usb-music-drop.onrender.com",
+  "usbPath": "",
+  "destinationFolder": "Incoming Music",
+  "retryMs": 2000
+}

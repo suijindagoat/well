@@ -1,0 +1,5 @@
+.data/
+.receiver-config.json
+*.part
+*.log
+

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: usb-music-drop
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MAX_FILE_BYTES
+        value: "8589934592"
